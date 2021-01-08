@@ -1,0 +1,373 @@
+@charset "utf-8";
+
+*{
+  font-family: "Hiragino Kaku Gothic ProN","ヒラギノ角ゴ ProN W3","Meiryo","メイリオ","ＭＳ Ｐゴシック",sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+a :link{
+  color: #66FFFF;
+}
+
+body {
+  background-color: rgb(157, 165, 185);
+  /* overflow: hidden; */
+  position: relative;
+}
+
+.enji1,
+.enji2,
+.enji3 {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+  background-color :rgb(215, 210, 198);
+}
+
+.enji1 {
+  top: 0;
+}
+
+.enji2 {
+  top: calc(100%/3);
+}
+
+.enji3 {
+  top: calc(200%/3);
+}
+
+/* .jordan {
+  position: relative;
+  width: 100%;
+  height: 700px;
+  background-image: url(画像/ジョーダン１.PNG) ;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+} */
+
+.sp-nav {
+  display: none;
+}
+
+.top-page1 {
+  position: absolute;
+  background-image: url(画像/ジョーダン１.PNG) ;
+  width: 100%;
+  height: 838px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.top-page2 {
+  position: absolute;
+  width: 100%;
+  height: 838px;
+  /* margin: 0 auto; */
+  background-image: url(画像/東寺2.jpeg) ;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.top-page3 {
+  position: absolute;
+  width: 100%;
+  height: 838px;
+  /* margin: 0 auto; */
+  background-image: url(画像/D4E7C4BC-456F-480F-8133-7B543A736D46.webp) ;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.top-page4 {
+  position: absolute;
+  width: 100%;
+  height: 838px;
+  /* margin: 0 auto; */
+  background-image: url(画像/ABC2BA2F-438B-4AD4-9C8A-1B0D007275FC.webp) ;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+li {
+  font-size: 2em;
+  text-shadow:1px 1px #66FFFF;
+  padding: 9px 9px 9px 30px;
+}
+
+ul {
+  position: fixed;
+  z-index: 100;
+  opacity: 0.5;
+  display: flex;
+  padding-left: 0;
+  text-align: center;
+}
+
+#footer-wrap {
+  /* position: absolute; */
+  width: 100%;
+  height: 100px;
+  margin-top: 838px;
+  background-color :#66FFFF;
+  font-size: 1em;
+  text-align: center;
+  overflow: hidden;
+  color: #fff;
+  position: fixed; 
+  z-index: 100;
+}
+
+/* #footer-wrap img {
+  float: left;
+} */
+
+#footer-wrap h1 {
+  display: inline-block;
+  text-shadow: 1px 2px 3px #808080;
+  /* padding-top:20px; */
+}
+
+
+/* タブレット表示 */
+
+@media screen and (max-width: 800px) {
+/* body {
+  width:800px;
+  height:600px;
+} */
+
+
+  .key {
+    position: relative;
+    background-image: url(画像/ジョーダン１.PNG);
+    width: 100%;
+    height: 690px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+
+
+#hamburger {
+  position: relative;
+  display: block;
+  width: 30px;
+  height: 25px;
+  margin: 000 auto;
+}
+
+#hamburger span {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  transform: translateY(-50%);
+}
+
+#hamburger::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+}
+
+#hamburger::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 70%;
+  height: 2px;
+  background-color: #fff;
+}
+
+.sp-nav {
+  z-index: 1;
+  padding: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: block;
+  background: rgba(0, 0, 0, .8);
+  transition: all .2s ease-in-out;
+  opacity: 0;
+  transform: translateY(-100%);
+}
+
+.sp-nav ul {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.sp-nav li {
+  margin: 0;
+  padding: 0;
+}
+
+.sp-nav li span {
+  font-size: 15px;
+  color: #fff;
+}
+
+.sp-nav li a, 
+.sp-nav li span {
+display: block;
+padding: 2px 0;
+}
+
+.sp-nav .close {
+  position: relative;
+  padding-left: 20px;
+}
+
+.sp-nav .close::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  display: block;
+  width: 16px;
+  height: 1px;
+  background: #fff;
+  transform: rotate(45deg);
+
+}
+
+.sp-nav .close::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  display: block;
+  width: 16px;
+  height: 1px;
+  background: #fff;
+  transform: rotate( -45deg );
+}
+
+.sentence {
+  position: absolute;
+  top: 15rem;
+  left: 10rem;
+  color: #fff;
+}
+
+.sentence h1 {
+  position: relative;
+  font-size: 5.5rem;
+  font-weight: bold;
+  height: 20vh;
+  width: 40rem;
+  overflow: hidden;
+}
+
+.sentence h1 .text {
+  position: absolute;
+}
+
+.sentence h2 {
+  color : rgb(90, 86, 90);
+  font-size: 10rem;
+  position: absolute;
+  top: 2.2rem;
+  left: -5rem;
+}
+
+.sentence  h3 {
+  top: 2rem;
+  position: relative;
+  font-size: 2.2rem;
+  font-weight: bold;
+  height: 10rem;
+  width:20rem;
+  overflow: hidden;
+}
+
+.sentence h3 .text {
+  position: absolute;
+}
+
+/* .sentence p {
+  position: relative;
+  font-size:0.8rem;
+  height: 8rem;
+  width:25rem;
+  overflow: hidden;
+  margin-top: 1rem;
+}
+
+.sentence p .text {
+  position: absolute;
+} */
+
+/* #footer-wrap {
+  width: 100%;
+  height: 100px;
+  margin-top: 580px;
+  background-color: #66FFFF;
+  font-size: 1em;
+  text-align: center;
+  overflow: hidden;
+  color: #fff;
+  position: fixed;
+  z-index: 100;
+} */
+
+
+
+/* .toggle {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+li {
+  display: table-cell;
+}
+
+} */
+
+
+
+
+
+/* @media (min-width: 768px) and (max-width: 1199px){
+
+.jordan{
+  height: 160%;
+} 
+
+  ul {
+    white-space: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  li {
+    display: table-cell;
+  }
+
+} */
+
+

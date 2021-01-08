@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="my-site.css">
+  <link rel="stylesheet" href="my-site2.css">
+  <!-- <link rel="stylesheet" href="my-site3.css"> -->
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="common.css">
+  <title>Masatsugu Yamamoto Portfolio Profile</title>
+</head>
+
+<body>
+
+  <header class="top-page2">
+      <ul>
+        <li><a href="my-site.html">Top</a></li>
+        <li><a href="my-site2.html">Profile</a></li>
+        <li><a href="my-site4.html">Skill</a></li>
+        <li><a href="my-site3.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="maeda">
+
+ 
+
+    <!-- <ul>
+      <li><a href="my-site.html">Top</a></li>
+      <li><a href="my-site2.html">Profile</a></li>
+      <li><a href="#">Skill</a></li>
+      <li><a href="my-site3.html">Contact</a></li>
+    </ul>
+  </div> -->
+
+    <div class="flame2">
+      <h1>山本 真嗣 （やまもと まさつぐ）</h1>
+      <p>
+        <span>生年月日</span>   1980年6月14日　ふたご座　<br>
+        <br>
+        <span>出身</span>　　 京都市生まれ、京都市育ち  Ｂ型　
+        <br>
+        <br>
+        東寺、五重塔のすぐそばで産声を上げ、山本家の長男として生を受けた。<br>
+        すぐ泣き、すぐ笑い感情の起伏が激しくよくＢ型と当てられることが<br>
+        多い。これは、今も変わらずそもまま育っている。<br>
+        　初めて、サッカーが好きになったのは名作「キャプテン翼」の影響が<br>
+        大きくあり、サッカー好きは今も変わらない。<br>
+        いつか、ドルトムントvsバイエルン戦をジグナル・イドゥナ・パルクで<br>
+        観戦したいものです。<br>
+        　ファッションと音楽に目覚めたのは、高校1年生の頃で周りの影響で<br>
+        気にするようになったし、カラオケによく行っていたので自然と好きに<br>
+        なっていました。当時、流行っていたＨＩＰＨＯＰが心に刺さり今でも<br>
+        好きな曲はないかとＡｐｐｌｅ Ｍｕｓｉｃで探しているぐらい探求心を<br>
+        持っています。<br>
+        　ＷＥＢプログラマーを目指そうと考えたきっかけはふと目にしたＣＭで<br>
+        エンジニアは今売りて市場だから稼げると耳にし、調べていくにつれて<br>
+        興味を持ち出し、勢いでＭａｃ Ｂｏｏｋを購入しました。<br>
+
+        いつか、夏はＬＡで暮らし、冬はＮＹで過ごす日を夢見ながらキーボード<br>
+        を叩いている毎日です。
+      </p>
+      <img src="画像/ＵＳＪ正義.JPG" alt="ＵＳＪ正義" width="300px" height="400px">
+    </div>
+
+    <div class="key">
+
+      <div class="wrapper">
+        <div class="enji1"></div><!-- enji1 -->
+        <div class="enji2"></div><!-- enji2 -->
+        <div class="enji3"></div><!-- enji3 -->
+        <div class="sentence">
+          <!-- <h1><span class="text">Welcome To</span></h1>
+          <h2>My Site</h2>
+          <h3><span class="text">Since<br>December 29th,2020</span></h3> -->
+          <!-- <p><span class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic dolorum pariatur sunt voluptas suscipit quia delectus. Hic, accusamus a atque aliquam nulla expedita nam. Maxime assumenda eligendi necessitatibus saepe placeat?</span></p> -->
+  
+  
+        </div><!-- sentence end-->
+  
+      </div><!-- wrapper end -->
+  
+    </div><!-- key end -->
+
+  </main><!-- top-page end -->
+
+  </div><!-- footer-wrap end -->
+  <footer>
+    <div id="footer-wrap">
+      <!-- <img src="" alt="logo"> -->
+      <h1>Masatsugu Yamamoto Portfolio</h1>
+      
+
+    </div><!-- footer-wrap end -->
+
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+
+  <script>
+    $(function(){
+      const hum = $('#hamburger, .close')
+      const nav = $('.sp-nav')
+      hum.on('click',function(){
+      nav.toggleClass('toggle')
+      });
+    });
+
+
+
+    gsap.to(".enji1",{
+      delay: 0.2,
+      left: "-100%",
+      duration: 1.5,
+      ease: "expo.inOut"
+    });
+
+    gsap.to(".enji2",{
+      delay: 0.3,
+      left: "-100%",
+      duration: 1.4,
+      ease: "expo.inOut"
+    });
+
+    gsap.to(".enji3",{
+      delay: 0.4,
+      left: "-100%",
+      duration: 1.3,
+      ease: "expo.inOut"
+    });
+
+    // gsap. from(".sentence h1 .text",{
+    //   delay: 0.5,
+    //   duration: 1,
+    //   x: "100%",
+    //   ease: "expo.inOut"
+    // });
+
+    // gsap. from(".sentence h2",{
+    //   delay: 1.0,
+    //   duration: 2,
+    //   x: "-120%",
+    //   ease: "expo.inOut"
+    // });
+
+    // gsap. from(".sentence h3 .text",{
+    //   delay: 1.5,
+    //   duration: 3,
+    //   y: "-100%",
+    //   ease: "expo.inOut"
+    // });
+
+    // gsap. from(".sentence p .text",{
+    //   delay: 2,
+    //   duration: 2,
+    //   y: "-100%",
+    //   ease: "expo.inOut"
+    // });
+
+  </script>
+  
+</body>
+</html>

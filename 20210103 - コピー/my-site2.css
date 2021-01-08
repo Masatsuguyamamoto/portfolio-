@@ -1,0 +1,86 @@
+@charset "utf-8";
+
+/* .top-page {
+  position: relative;
+  width: 100%;
+  height: 700px;
+  margin: 0 auto;
+  background-image: url(https://source.unsplash.com/random) ;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+} */
+
+p {
+  font-size: 1.0em;
+  display: inline-block;
+  color:  #0f0e0e;
+  text-align:left;
+  text-shadow:1px 1px #dad4cc;
+  padding-bottom: 0.7px;
+}
+
+span {
+  color: #66FFFF;
+}
+
+.maeda {
+  text-align: center;
+}
+
+.flame2 {
+  display: inline-block;
+  background-color: aliceblue;
+  /* height: 66%; */
+  width: 860px;
+  padding: 30px 20px 20px 40px;
+  padding-right: 5%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 30%);
+  border-radius: 1em;
+  opacity: 0.9;
+}
+
+.sentence {
+  position: absolute;
+  top: 15rem;
+  left: 10rem;
+  color: #fff;
+}
+
+.sentence h1 {
+  position: relative;
+  font-size: 5.5rem;
+  font-weight: bold;
+  height: 20vh;
+  width: 40rem;
+  overflow: hidden;
+}
+
+/* .sentence h1 .text {
+  position: absolute;
+}
+
+.sentence h2 {
+  color : rgb(90, 86, 90);
+  font-size: 10rem;
+  position: absolute;
+  top: 2.2rem;
+  left: -5rem;
+}
+
+.sentence  h3 {
+  top: 2rem;
+  position: relative;
+  font-size: 2.2rem;
+  font-weight: bold;
+  height: 10rem;
+  width:20rem;
+  overflow: hidden;
+}
+
+.sentence h3 .text {
+  position: absolute;
+} */

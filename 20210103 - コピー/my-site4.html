@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="my-site.css">
+  <link rel="stylesheet" href="my-site2.css">
+  <link rel="stylesheet" href="my-site3.css">
+  <link rel="stylesheet" href="my-site4.css">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="common.css">
+  <title>Masatsugu Yamamoto Portfolio Profile</title>
+</head>
+
+<body>
+
+  <header class="top-page4">
+      <ul>
+        <li><a href="my-site.html">Top</a></li>
+        <li><a href="my-site2.html">Profile</a></li>
+        <li><a href="my-site4.html">Skill</a></li>
+        <li><a href="my-site3.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="maeda">
+
+  
+
+    <!-- <ul>
+      <li><a href="my-site.html">Top</a></li>
+      <li><a href="my-site2.html">Profile</a></li>
+      <li><a href="#">Skill</a></li>
+      <li><a href="my-site3.html">Contact</a></li>
+    </ul>
+  </div> -->
+
+    <div class="flame4">
+        <div class="ttl">
+        <h2>SKILL</h2>
+        </div>
+        <div class="ppp">
+            <h3>HTML & CSS</h3>
+            <p>🌟🌟🌟</p><br>
+            <p>WEBサイト作成基礎は身につけています。今後の目標は、ショッピングサイト作成。</p>
+
+            <h3>JAVA SCRIPT</h3>
+            <p>🌟🌟</p><br>
+            <p>まだまだ勉強中。ゲームをいくつか作成予定。近日公開予定につき乞うご期待！！</p>
+
+            <h3>WORD PRESS</h3>
+            <p>🌟</p><br>
+            <p>企画段階ですが、BLOG作成予定。今春公開予定。</p>
+        </div><!-- ppp end -->
+
+    </div><!-- flame4 end -->
+
+  </main><!-- top-page end -->
+
+  </div><!-- footer-wrap end -->
+  <div class="key">
+
+    <div class="wrapper">
+      <div class="enji1"></div><!-- enji1 -->
+      <div class="enji2"></div><!-- enji2 -->
+      <div class="enji3"></div><!-- enji3 -->
+      <div class="sentence">
+        <!-- <h1><span class="text">Welcome To</span></h1>
+        <h2>My Site</h2>
+        <h3><span class="text">Since<br>December 29th,2020</span></h3> -->
+        <!-- <p><span class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic dolorum pariatur sunt voluptas suscipit quia delectus. Hic, accusamus a atque aliquam nulla expedita nam. Maxime assumenda eligendi necessitatibus saepe placeat?</span></p> -->
+
+
+      </div><!-- sentence end-->
+
+    </div><!-- wrapper end -->
+
+  </div><!-- key end -->
+
+</main><!-- top-page end -->
+
+</div><!-- footer-wrap end -->
+<footer>
+  <div id="footer-wrap">
+    <!-- <img src="" alt="logo"> -->
+    <h1>Masatsugu Yamamoto Portfolio</h1>
+    
+
+  </div><!-- footer-wrap end -->
+
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+
+<script>
+  $(function(){
+    const hum = $('#hamburger, .close')
+    const nav = $('.sp-nav')
+    hum.on('click',function(){
+    nav.toggleClass('toggle')
+    });
+  });
+
+
+
+  gsap.to(".enji1",{
+    delay: 0.2,
+    left: "-100%",
+    duration: 1.5,
+    ease: "expo.inOut"
+  });
+
+  gsap.to(".enji2",{
+    delay: 0.3,
+    left: "-100%",
+    duration: 1.4,
+    ease: "expo.inOut"
+  });
+
+  gsap.to(".enji3",{
+    delay: 0.4,
+    left: "-100%",
+    duration: 1.3,
+    ease: "expo.inOut"
+  });
+
+  // gsap. from(".sentence h1 .text",{
+  //   delay: 0.5,
+  //   duration: 1,
+  //   x: "100%",
+  //   ease: "expo.inOut"
+  // });
+
+  // gsap. from(".sentence h2",{
+  //   delay: 1.0,
+  //   duration: 2,
+  //   x: "-120%",
+  //   ease: "expo.inOut"
+  // });
+
+  // gsap. from(".sentence h3 .text",{
+  //   delay: 1.5,
+  //   duration: 3,
+  //   y: "-100%",
+  //   ease: "expo.inOut"
+  // });
+
+  // gsap. from(".sentence p .text",{
+  //   delay: 2,
+  //   duration: 2,
+  //   y: "-100%",
+  //   ease: "expo.inOut"
+  // });
+
+</script>
+
+</body>
+</html>

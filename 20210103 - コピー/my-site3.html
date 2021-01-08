@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="my-site.css">
+  <!-- <link rel="stylesheet" href="my-site2.css"> -->
+  <link rel="stylesheet" href="my-site3.css">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="common.css">
+  <title>Masatsugu Yamamoto Contact</title>
+</head>
+
+<body>
+
+  <header  class="top-page3">
+      <ul>
+        <li><a href="my-site.html">Top</a></li>
+        <li><a href="my-site2.html">Profile</a></li>
+        <li><a href="my-site4.html">Skill</a></li>
+        <li><a href="my-site3.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+
+
+
+  <div class="flame3">
+    <h1 class="ttl3">Contact</h1>
+    <form action="#" method="post">
+
+      <dl>
+        <dt>お名前 name</dt>
+        <dd><input type="text" name="name"></dd>
+        <dt>メールアドレス mail</dt>
+        <dd><input type="email" name="mail"></dd>
+        <dt>Masatsugu Yamamotoの事は知っていましたか？ history</dt>
+        <dd><input type="radio" name="history">ＹＥＳ</dd>
+        <dd><input type="radio" name="history">ＮＯ</dd>
+        <dt>ＳＩＴＥの感想を教えて下さい Impressions</dt>
+        <dd>
+          <select name="Impressions">
+            <option value="Good">Good</option>
+            <option value="usually">usually</option>
+            <option value="Bad">Bad</option>
+            <option value="Very Bad">Very Bad</option>
+          </select>
+        <dt>コメント comment</dt>
+        <dd><textarea name="comment" id="" cols="30" rows="10"></textarea>
+        </dd>
+        <dt>ご協力ありがとうございました</dt>
+        <dd><input type="submit" value="送信"></dd>
+      </dl>
+    </form>
+    </div>
+  </main>
+
+  <div class="key">
+
+    <div class="wrapper">
+      <div class="enji1"></div><!-- enji1 -->
+      <div class="enji2"></div><!-- enji2 -->
+      <div class="enji3"></div><!-- enji3 -->
+      <div class="sentence">
+        <!-- <h1><span class="text">Welcome To</span></h1>
+        <h2>My Site</h2>
+        <h3><span class="text">Since<br>December 29th,2020</span></h3> -->
+        <!-- <p><span class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic dolorum pariatur sunt voluptas suscipit quia delectus. Hic, accusamus a atque aliquam nulla expedita nam. Maxime assumenda eligendi necessitatibus saepe placeat?</span></p> -->
+
+
+      </div><!-- sentence end-->
+
+    </div><!-- wrapper end -->
+
+  </div><!-- key end -->
+
+</main><!-- top-page end -->
+
+</div><!-- footer-wrap end -->
+<footer>
+  <div id="footer-wrap">
+    <!-- <img src="" alt="logo"> -->
+    <h1>Masatsugu Yamamoto Portfolio</h1>
+    
+
+  </div><!-- footer-wrap end -->
+
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+
+<script>
+  $(function(){
+    const hum = $('#hamburger, .close')
+    const nav = $('.sp-nav')
+    hum.on('click',function(){
+    nav.toggleClass('toggle')
+    });
+  });
+
+
+
+  gsap.to(".enji1",{
+    delay: 0.2,
+    left: "-100%",
+    duration: 1.5,
+    ease: "expo.inOut"
+  });
+
+  gsap.to(".enji2",{
+    delay: 0.3,
+    left: "-100%",
+    duration: 1.4,
+    ease: "expo.inOut"
+  });
+
+  gsap.to(".enji3",{
+    delay: 0.4,
+    left: "-100%",
+    duration: 1.3,
+    ease: "expo.inOut"
+  });
+
+  // gsap. from(".sentence h1 .text",{
+  //   delay: 0.5,
+  //   duration: 1,
+  //   x: "100%",
+  //   ease: "expo.inOut"
+  // });
+
+  // gsap. from(".sentence h2",{
+  //   delay: 1.0,
+  //   duration: 2,
+  //   x: "-120%",
+  //   ease: "expo.inOut"
+  // });
+
+  // gsap. from(".sentence h3 .text",{
+  //   delay: 1.5,
+  //   duration: 3,
+  //   y: "-100%",
+  //   ease: "expo.inOut"
+  // });
+
+  // gsap. from(".sentence p .text",{
+  //   delay: 2,
+  //   duration: 2,
+  //   y: "-100%",
+  //   ease: "expo.inOut"
+  // });
+
+</script>
+
+</body>
+</html>
